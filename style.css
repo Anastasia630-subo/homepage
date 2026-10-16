@@ -1,1 +1,303 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Manrope',sans-serif;color:#202735;background:#fff;line-height:1.65}.container{width:min(1120px,calc(100% - 40px));margin:0 auto}.header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);border-bottom:1px solid #e6e9ef}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:30px}.logo{font-weight:800;letter-spacing:.08em;color:#202735;text-decoration:none}.menu{display:flex;gap:24px;list-style:none;margin:0;padding:0}.menu a{color:#586174;text-decoration:none;font-size:14px;font-weight:600}.menu a:hover{color:#315fbb}.hero{padding:86px 0 74px;background:linear-gradient(180deg,#f7f9fc 0,#fff 100%)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;font-weight:700;color:#315fbb;margin:0 0 12px}h1{font-size:clamp(40px,6vw,72px);line-height:1.05;letter-spacing:-.045em;margin:0 0 24px;max-width:760px}h2{font-size:38px;line-height:1.15;letter-spacing:-.03em;margin:0 0 28px}h3{margin:0 0 10px;font-size:20px}.lead{font-size:18px;color:#667085;max-width:660px;margin:0 0 32px}.button{display:inline-block;background:#202735;color:#fff;text-decoration:none;padding:13px 20px;border-radius:10px;font-weight:700}.button:hover{background:#315fbb}.hero-image svg{display:block;width:100%;height:auto;box-shadow:0 24px 60px rgba(32,39,53,.12);border-radius:32px}.section{padding:82px 0}.alt{background:#f7f9fc}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{padding:28px;border:1px solid #e3e7ee;border-radius:18px;background:#fff}.card p{margin:0;color:#667085}.two-columns{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}.two-columns p{color:#667085}.skill-list{list-style:none;margin:0;padding:0;border-top:1px solid #dfe4ec}.skill-list li{display:flex;justify-content:space-between;gap:20px;padding:17px 0;border-bottom:1px solid #dfe4ec}.skill-list b{font-size:13px;color:#7a8496;font-weight:600}.table-wrap{overflow-x:auto;border:1px solid #e3e7ee;border-radius:16px}table{width:100%;border-collapse:collapse;min-width:650px}th,td{text-align:left;padding:18px 20px;border-bottom:1px solid #e8ebf0}th{background:#f7f9fc;font-size:13px;text-transform:uppercase;letter-spacing:.06em}tbody tr:last-child td{border-bottom:0}.status{display:inline-block;padding:5px 10px;border-radius:999px;background:#edf0f5;color:#667085;font-size:12px;font-weight:700}.status.done{background:#e8f3eb;color:#39724b}.footer{background:#202735;color:#fff;padding:48px 0}.footer-grid{display:grid;grid-template-columns:1.2fr 1fr .8fr;gap:40px;align-items:start}.footer p{color:#bdc5d2;margin:8px 0 0}.copyright{color:#bdc5d2;text-align:right;font-size:14px}@media(max-width:800px){.nav{align-items:flex-start;padding:18px 0;flex-direction:column}.menu{flex-wrap:wrap;gap:12px 18px}.hero{padding-top:55px}.hero-grid,.two-columns,.footer-grid{grid-template-columns:1fr;gap:36px}.cards{grid-template-columns:1fr}.copyright{text-align:left}.section{padding:60px 0}}
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+    color: #202735;
+    background: #fff;
+    line-height: 1.65;
+}
+
+.container {
+    width: min(1120px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+/* Шапка и навигация */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, .94);
+    border-bottom: 1px solid #e6e9ef;
+}
+
+nav {
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: .08em;
+    color: #202735;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: #586174;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #315fbb;
+}
+
+/* Главный экран (Hero) */
+.hero {
+    padding: 86px 0 74px;
+    background: linear-gradient(180deg, #f7f9fc 0, #fff 100%);
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.eyebrow {
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-size: 12px;
+    font-weight: 700;
+    color: #315fbb;
+    margin: 0 0 12px;
+}
+
+h1 {
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+    letter-spacing: -.045em;
+    margin: 0 0 24px;
+    max-width: 760px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 1.15;
+    letter-spacing: -.03em;
+    margin: 0 0 28px;
+}
+
+h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    color: #667085;
+    max-width: 660px;
+    margin: 0 0 32px;
+}
+
+.button {
+    display: inline-block;
+    background: #202735;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.button:hover {
+    background: #315fbb;
+}
+
+.hero-image svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 24px 60px rgba(32, 39, 53, .12);
+    border-radius: 32px;
+}
+
+/* Общие разделы */
+.section {
+    padding: 82px 0;
+}
+
+.alt {
+    background: #f7f9fc;
+}
+
+/* Карточки */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    padding: 28px;
+    border: 1px solid #e3e7ee;
+    border-radius: 18px;
+    background: #fff;
+}
+
+.card p {
+    margin: 0;
+    color: #667085;
+}
+
+/* Двухколоночная верстка */
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.two-columns p {
+    color: #667085;
+}
+
+/* Списки и таблицы */
+.skill-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #dfe4ec;
+}
+
+.skill-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 17px 0;
+    border-bottom: 1px solid #dfe4ec;
+}
+
+.skill-list b {
+    font-size: 13px;
+    color: #7a8496;
+    font-weight: 600;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid #e3e7ee;
+    border-radius: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+th, td {
+    text-align: left;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e8ebf0;
+}
+
+th {
+    background: #f7f9fc;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+tbody tr:last-child td {
+    border-bottom: 0;
+}
+
+/* Бейджи (статусы) */
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 999px;
+    background: #edf0f5;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.status.done {
+    background: #e8f3eb;
+    color: #39724b;
+}
+
+/* Подвал */
+.footer {
+    background: #202735;
+    color: #fff;
+    padding: 48px 0;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr .8fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.footer p {
+    color: #bdc5d2;
+    margin: 8px 0 0;
+}
+
+.copyright {
+    color: #bdc5d2;
+    text-align: right;
+    font-size: 14px;
+}
+
+/* Адаптивность */
+@media (max-width: 800px) {
+    nav {
+        align-items: flex-start;
+        padding: 18px 0;
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero-grid,
+    .two-columns,
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .copyright {
+        text-align: left;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+}
